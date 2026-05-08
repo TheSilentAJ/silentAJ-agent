@@ -5,9 +5,10 @@ import time
 from urllib.parse import quote
 
 # ============ CONFIG ============
-GOOGLE_API_KEY = "AIzaSyA408W4MCaMVxz8y6XkyWb_Nv1RZ_j-JRE"
-IG_USER_ID = "17841433559518798"
-ACCESS_TOKEN = "EAAXUVOu2jfsBRcv2tOM7yxq5IOFhFZByjSaDhtREh4aIi1F7UZCxZCsrouYdZByFfTmpzXKLrZAi1UjlSDKlPCdZCtg9igv0B6gjZCDGZAjlrVO9536uPy0AKMgHbe2ICLGH7uarwVYZCG9jQPLWXlyjo7oweMhuviZBzOcASuq1nvKREppkkWUMjEzWab9Kt0ksEoya6gm1tFCPirxabuKjkdPrIXrTJZAuwx9l0kf1srzDnZAisB36KbJe44LsfjDnIwvMTre4o1pHKV9klZCs43L5E"
+import os
+GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
+IG_USER_ID = os.environ.get("IG_USER_ID")
+ACCESS_TOKEN = os.environ.get("FB_ACCESS_TOKEN")
 
 # Topics — har roz alag post
 TOPICS = [
