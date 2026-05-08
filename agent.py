@@ -105,11 +105,11 @@ if __name__ == "__main__":
     print("🚀 SilentAj Agent Starting...")
     
     # Abhi ek baar test karo
-    run_agent()
+    # run_agent()
     
     # Phir roz subah 9 baje auto post
-    # schedule.every().day.at("09:00").do(run_agent)
-    # print("⏰ Scheduler active — roz 9 baje post hogi!")
-    # while True:
-    #     schedule.run_pending()
-    #     time.sleep(60)
+    schedule.every().day.at("09:00").do(run_agent)
+    print("⏰ Scheduler active — roz 9 baje post hogi!")
+    while True:
+        schedule.run_pending()
+        time.sleep(60)
